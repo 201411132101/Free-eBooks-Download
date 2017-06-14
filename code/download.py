@@ -41,7 +41,7 @@ fp.write('食人魔的美食盒\n' + '作者：黑籍\n')
 dic = get_map()
 for key in dic:
     chapter = key + '\n'
-    chapter += get_chapter(dic[key])
+    chapter += get_chapter(dic[key]) + '\n'
     fp.write(chapter)
     print(key)
 
