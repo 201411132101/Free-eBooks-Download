@@ -4,7 +4,7 @@ import re
 
 
 def get_map():
-    url = 'http://www.baquge.tw/files/article/html/0/24'
+    url = 'http://www.baquge.tw/files/article/html/28/28127/'
     response = urllib.request.urlopen(url)
     html = response.read().decode('GBK')
 
@@ -35,8 +35,8 @@ def get_chapter(url):
     return chp
 
 
-fp = open('食人魔的美食盒.txt', 'w')
-fp.write('食人魔的美食盒\n' + '作者：黑籍\n')
+fp = open('大逆之门.txt', 'w')
+fp.write('大逆之门\n' + '作者：知白\n')
 
 dic = get_map()
 for key in dic:
